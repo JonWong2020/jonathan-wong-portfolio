@@ -7,13 +7,33 @@
 /* Variables */
 
 /* Element Selectors */
-header {
-    position: fixed;
+body {
+    position: relative;
+    background-color: ivory;
+    font-size: 20px;
+}
+
+header,
+footer {
     height: 50px;
     width: 100%;
     line-height: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 10px solid black;
+    background-color: darkseagreen;
+}
+
+h1 {
+    border: 3px black dashed;
+
+}
+
+nav ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+main {
+    padding: 60px 0;
 }
 
 /* Class Selectors */
