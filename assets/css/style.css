@@ -2,87 +2,103 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Variables */
 
+
 /* Element Selectors */
 body {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 20px;
     background-color: rgb(44, 43, 43);
     color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-footer {
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: darkseagreen;
 }
 
-h1 {
-    border: 3px black dashed;
-
+footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: darkseagreen;
+    margin-top: 0;
 }
 
-/* nav { */
-    position: absolute;
-    top: 0;
-    right: 0;;
-    margin-right: 20px;
-/* } */
+nav { 
+    display: flex;
+    background-color: rgb(79, 138, 125);
+} 
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 25px
-}
-
-a {
+nav a {
+    padding: 14px 20px;
     text-decoration: none;
+    text-align: center;
     color: whitesmoke;
-
 }
 
 main {
     padding: 200px;
 }
 
+img {
+    display: block;
+    position: relative;
+    bottom: 155px;
+    right: 150px;
+}
+
 section {
     display: block;
     position: relative;
     bottom: 120px;
-    /* right: 200px; */
+    right: 151px;
     border: 5px solid black;
 }
 
 section p {
     padding: 100px;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-}
+
 /* Class Selectors */
 .text-right {
     text-align: right;
 }
 
+.text-center {
+    text-align: center;
+}
 
 
 /* ID Selectors */
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    main, 
+    nav {
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+    flex-direction: column;
+    }
+}
