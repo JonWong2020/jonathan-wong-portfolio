@@ -27,8 +27,23 @@ h1 {
 
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
 nav ul li {
-    display: inline;
+    display: inline-block;
+    margin-left: 25px
+}
+
+a {
     text-decoration: none;
 }
 
@@ -36,6 +51,10 @@ main {
     padding: 60px 0;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+}
 /* Class Selectors */
 .text-right {
     text-align: right;
