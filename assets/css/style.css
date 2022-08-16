@@ -59,20 +59,25 @@ nav a {
     padding: 14px 20px;
 }
 
-footer a{
+footer a {
     margin-left: 80%;
 }
+
 main {
-    padding: 200px;
+    padding: 50px 20px;
+}
+
+h2 { 
+    font-size: calc(1rem + 3vw);
 }
 
 img {
-    display: block;
-    position: relative;
+    max-width: 100%;
 }
 
 article {
     display: flex;
+    flex: 1 1;
     flex-wrap: wrap;
     width: var(--width);
     /* bottom: 120px; */
