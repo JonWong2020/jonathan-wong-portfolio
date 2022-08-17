@@ -65,11 +65,14 @@ main {
 
 h2 { 
     font-size: calc(1rem + 3vw);
+    text-decoration: underline;
+    margin: 10px;
 }
 
-img {
+figure img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 article,
@@ -85,19 +88,28 @@ section {
 
 article p {
     padding: 20px;
+    margin-left: 1em;
 }
 
 /* Class Selectors */
 .inner-heading {
     width: 100%;
     text-align: center;
-    border-bottom: 3px solid var(--main-text);
+    /* border-bottom: 3px solid var(--main-text); */
+}
+
+.bio {
+    display: flex;
+    align-items: center;
 }
 
 .avatar {
     display: inline-flex;
 }
 
+.avatar img {
+    margin: 30px;
+}
 /* ID Selectors */
 
 /* Media Queries */
@@ -112,5 +124,8 @@ article p {
     main,
     nav {
     flex-direction: column;
+    }
+    .bio {
+        flex-wrap: wrap;
     }
 }
