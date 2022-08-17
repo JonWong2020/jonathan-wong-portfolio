@@ -43,6 +43,12 @@ footer {
     border-top: 5px solid var(--main-text);
 }
 
+footer a {
+    position: absolute;
+    right: 0;
+    width: 130px;
+}
+
 nav { 
     display: flex;
     background-color: rgb(79, 138, 125);
@@ -62,12 +68,6 @@ nav a {
 nav a:hover {
     background-color: var(--main-text);
     color: black
-}
-
-footer a {
-    position: absolute;
-    right: 0;
-    width: 130px;
 }
 
 main {
@@ -161,6 +161,24 @@ article p {
     filter: none;
 }
 
+.github {
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+
+.twitter {
+    position: absolute;
+    right: 0;
+    width: 195px;
+}
+
+.email {
+    position: absolute;
+    right: 0;
+    width: 280px;
+}
+
 /* ID Selectors */
 #portfolio {
     display: inline-flex;
@@ -174,6 +192,18 @@ article p {
     flex-direction: column;
     flex-wrap: wrap;
     }
+
+    .bio,
+    .project-1 img {
+        flex-wrap: wrap;
+        flex: 1 0;
+        width: 75%;
+    }
+
+    .project-ph img {
+        flex-wrap: wrap;
+        flex: 1 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -183,10 +213,11 @@ article p {
     }
 
     .bio,
+    .avatar img,
     .project-1 img,
     .project-ph img{
         flex-wrap: wrap;
-        flex: 1 1;
+        flex: 1 0;
         width: 50%;
     }
 }
