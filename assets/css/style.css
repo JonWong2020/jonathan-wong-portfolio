@@ -80,11 +80,16 @@ h2 {
     margin: 10px;
 }
 
-figure img {
+figure {
     display: block;
     margin-left: auto;
     margin-right: auto;        
-    width: 40%;
+}
+
+figure img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 article,
@@ -122,6 +127,21 @@ article p {
 .avatar img {
     margin: 30px;
 }
+
+.project-1 a {
+    display: inline-flex;
+    align-content: center;
+}
+.project-1 img {
+    opacity: 0.7;
+    filter: blur(3px)
+}
+
+.project-1 img:hover {
+    opacity: 1.0;
+    filter: none;
+}
+
 /* ID Selectors */
 
 /* Media Queries */
@@ -129,6 +149,7 @@ article p {
     main, 
     nav {
     flex-direction: column;
+    flex-wrap: wrap;
     }
 }
 
@@ -137,7 +158,10 @@ article p {
     nav {
     flex-direction: column;
     }
-    .bio {
+    .bio,
+    .project-1 img {
         flex-wrap: wrap;
+        flex: 1 1;
+        width: 50%;
     }
 }
