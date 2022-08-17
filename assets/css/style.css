@@ -128,33 +128,44 @@ article p {
     margin: 30px;
 }
 
-.project-1 {
+.project-1,
+.project-ph {
+    position: relative;
     padding: 25px
 }
 
-.project-1 p {
+.project-name {
     position: absolute;
-    top: 246%;
-    font-size: 50px;
-    background: var(--seagreen)
+    font-size: 30px;
+    line-height: 45px;
+    background: var(--seagreen);
+    padding: 1px 9px
 }
 
-.project-1 a {
+.project-1 a,
+.project-ph a {
     display: inline-flex;
     align-content: center;
+    box-shadow: -25px -45px 70px inset var(--main-text);
 }
 
-.project-1 img {
+.project-1 img,
+.project-ph img {
     opacity: 0.7;
     filter: blur(3px)
 }
 
-.project-1 img:hover {
+.project-1 img:hover,
+.project-ph img:hover {
     opacity: 1.0;
     filter: none;
 }
 
 /* ID Selectors */
+#portfolio {
+    display: inline-flex;
+    align-content: center;
+}
 
 /* Media Queries */
 @media screen and (max-width: 992px) {
@@ -170,8 +181,10 @@ article p {
     nav {
     flex-direction: column;
     }
+
     .bio,
-    .project-1 img {
+    .project-1 img,
+    .project-ph img{
         flex-wrap: wrap;
         flex: 1 1;
         width: 50%;
