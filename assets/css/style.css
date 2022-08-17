@@ -128,10 +128,22 @@ article p {
     margin: 30px;
 }
 
+.project-1 {
+    padding: 25px
+}
+
+.project-1 p {
+    position: absolute;
+    top: 246%;
+    font-size: 50px;
+    background: var(--seagreen)
+}
+
 .project-1 a {
     display: inline-flex;
     align-content: center;
 }
+
 .project-1 img {
     opacity: 0.7;
     filter: blur(3px)
