@@ -12,6 +12,8 @@ Repo:  https://github.com/JonWong2020/jonathan-wong-portfolio
 
 ## Screenshot
 
+![portfolio](https://user-images.githubusercontent.com/110364895/185287803-45f3ca6d-9317-464d-8c7a-8f4cb0c5ad83.gif)
+
 ## Credits and Contributions
 
 * W<sup>3</sup> Schools and MDN Webdocs for references on use of various CSS elements and attributes.
