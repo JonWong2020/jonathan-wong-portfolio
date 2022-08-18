@@ -43,31 +43,10 @@ footer {
     border-top: 5px solid var(--main-text);
 }
 
-footer a {
-    position: absolute;
-    right: 0;
-    width: 130px;
-}
-
-nav { 
-    display: flex;
-    background-color: rgb(79, 138, 125);
-    position: sticky;
-    top: 0;
-} 
 
 a {
     text-decoration: none;
     color: var(--main-text);
-}
-
-nav a {
-    padding: 14px 20px;
-}
-
-nav a:hover {
-    background-color: var(--main-text);
-    color: black
 }
 
 main {
@@ -110,7 +89,25 @@ article p {
 
 /* Class Selectors */
 
-/* Bio Section classes*/
+/* Top Nav */
+
+.topnav {
+    display: flex;
+    background-color: rgb(79, 138, 125);
+    position: sticky;
+    top: 0;
+}
+
+.topnav a {
+    padding: 14px 20px;
+}
+
+.topnav a:hover{
+    background-color: var(--main-text);
+    color: black
+}
+
+/* Bio Section classes */
 
 .inner-heading {
     width: 100%;
@@ -176,22 +173,16 @@ article p {
     filter: none;
 }
 
-.github {
-    position: absolute;
-    right: 0;
-    width: 100px;
+.contactlinks {
+    display: inline;
+    flex-wrap: wrap;
+    flex: 1 0;
+    padding: 0px 20%;
 }
 
-.twitter {
-    position: absolute;
-    right: 0;
-    width: 195px;
-}
-
-.email {
-    position: absolute;
-    right: 0;
-    width: 280px;
+.contactlinks a {
+    margin: 0 40px;
+    padding: 0 30px;
 }
 
 /* ID Selectors */
@@ -202,6 +193,27 @@ article p {
 }
 
 /* Media Queries */
+
+/* Laptop */
+
+@media screen and (max-width: 1223px) {
+    .contactlinks {
+        display: inline;
+        flex-wrap: wrap;
+        flex: 1 0;
+        padding: 0px 18%;
+    }
+}
+
+@media screen and  (max-width: 1141px) {
+    .contactlinks {
+        display: inline;
+        flex-wrap: wrap;
+        flex: 1 0;
+        padding: 0px 10%;
+    }
+}
+/* Tablet  */
 @media screen and (max-width: 992px) {
     main, 
     nav {
@@ -222,6 +234,7 @@ article p {
     }
 }
 
+
 @media screen and (max-width: 768px) {
     main,
     nav {
@@ -237,3 +250,27 @@ article p {
         width: 50%;
     }
 }
+
+/* Extra code that was commented out */
+
+/* footer a {
+    position: absolute;
+    right: 0;
+    width: 130px;
+} */
+
+/* nav { 
+    display: flex;
+    background-color: rgb(79, 138, 125);
+    position: sticky;
+    top: 0;
+}  */
+
+/* nav a {
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    background-color: var(--main-text);
+    color: black
+} */
