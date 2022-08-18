@@ -109,6 +109,9 @@ article p {
 }
 
 /* Class Selectors */
+
+/* Bio Section classes*/
+
 .inner-heading {
     width: 100%;
     text-align: center;
@@ -126,6 +129,18 @@ article p {
 
 .avatar img {
     margin: 30px;
+}
+
+/* Portfolio classes*/
+
+.project-1-size {
+    height: 500px;
+    width: 880px;
+}
+
+.project-ph-size {
+    height: 350px;
+    width: 380px;
 }
 
 .project-1,
@@ -180,6 +195,7 @@ article p {
 }
 
 /* ID Selectors */
+
 #portfolio {
     display: inline-flex;
     align-content: center;
